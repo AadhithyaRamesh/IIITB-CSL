@@ -1,0 +1,194 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/template.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>About The Project</title>
+<!-- InstanceEndEditable -->
+<!-- InstanceBeginEditable name="head" -->
+<style type="text/css">
+<!--
+.style7 {font-family: Verdana, Arial, Helvetica, sans-serif}
+-->
+</style>
+<!-- InstanceEndEditable -->
+<style type="text/css">
+<!--
+.style5 {color: #AE2201; font-family: Verdana, Arial, Helvetica, sans-serif; font-weight: bold; }
+.style6 {	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+a:link {
+	color: #AE2201;
+}
+a:visited {
+	color: #AE2201;
+}
+body {
+	background-image: url(mainbg.jpg);
+	background-repeat: repeat;
+	background-color: #A91700;
+}
+.style8 {font-size: medium}
+.style9 {color: #FFFFFF}
+-->
+</style>
+<script type="text/javascript">
+function clear1(){
+var e=document.getElementById("email");
+e.value="";
+//alert("sds");
+
+}
+
+var  email;
+
+var xmlHttp;// global instance of XMLHttpRequest
+function createXmlHttpRequest()
+{
+       if(window.ActiveXObject)
+       {
+        xmlHttp=new ActiveXObject("Microsoft.XMLHTTP");
+      }
+
+    else if(window.XMLHttpRequest)
+    {
+        xmlHttp=new XMLHttpRequest();
+     }
+
+}
+
+
+
+function startRequest()
+{
+
+  createXmlHttpRequest();
+var emailId=document.getElementById("email");
+var url="http://localhost:8080/chitrakavya/newsletter.s?email="+emailId.value;
+email=emailId.value;
+  xmlHttp.open("GET", url,true);
+
+  xmlHttp.onreadystatechange=handleStateChange;
+
+  xmlHttp.send(null);
+message1();
+}
+
+
+
+function handleStateChange()
+{			 
+    if(xmlHttp.readyState==4)
+    {
+        if(xmlHttp.status==200)
+            {
+			var i = document.getElementById("subsText");
+i.innerHTML=email+" Subscribed, Thank You.";
+
+		  			
+				
+            }
+        else
+        {
+           alert("Error loading pagen"+ xmlHttp.status +
+":"+xmlHttp.statusText);
+        }
+    }
+}
+
+
+
+
+function test(){
+}
+</script>
+<link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<table width="100%" border="0">
+  <tr>
+    <td width="18%">&nbsp;</td>
+    <td width="67%"><table width="89%" border="0" bgcolor="#000000">
+  <tr>
+    <td width="65%"><img src="../Chitrakavya_files/header.jpg" width="800" height="208" /></td>
+  </tr>
+  <tr>
+    <td bgcolor="#9999FF" class="style5"><div align="center" class="style9">Welcome</div></td>
+  </tr>
+  <tr>
+    <td><table width="100%" border="0" bgcolor="#FFFFFF">
+      <tr>
+        <td width="173" valign="top" bgcolor="#CCCCFF"><table width="100%" border="0">
+          <tr>
+            <td bgcolor="#D6D6D6" class="style6"><span class="style5"><a href="index.html">The Project </a></span></td>
+          </tr>
+          <tr>
+            <td bgcolor="#EBEBEB" class="style6"><a href="visuals.html">Chitrakavya Animations</a></td>
+          </tr>
+          <tr>
+            <td bgcolor="#D6D6D6" class="style6"><a href="learnsanskrit.html">Learn Sanskrit </a></td>
+          </tr>
+          <tr>
+            <td bgcolor="#EBEBEB" class="style6"><a href="download.html">Research Papers</a><a href="Forum.html"></a></td>
+          </tr>
+          <tr>
+            <td bgcolor="#D6D6D6" class="style6"><a href="Sanskrit%20Tools.html">Tools </a></td>
+          </tr>
+          <tr>
+            <td bgcolor="#EBEBEB" class="style6"><span class="style5"><a href="resources.html">Resources</a><a href="Ekam.html"></a></span></td>
+          </tr>
+          <tr>
+            <td bgcolor="#D6D6D6" class="style6"><span class="style5"><a href="mailto:chitrakavya@googlegroups.com">Contact Us</a></span></td>
+          </tr>
+        </table>
+          
+          <table width="100%" border="0" bgcolor="#FE9353">
+            <tr>
+              <td width="158"><div align="center" class="style6">Subscribe to Newsletter </div></td>
+            </tr>
+            <tr>
+              <td bgcolor="#C0DCC0" id="subsText"><label>
+                <div align="center">
+                  <input name="emailText" type="text" id="email" value="Email Id" onclick="clear1();"/>
+                  </div>
+                <div align="center">
+                  <input name="Submit" type="submit" class="style6" onclick="startRequest();" value="Subscribe" />
+                  </div>
+              </label></td>
+            </tr>
+          </table>
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+          <p align="center">
+            <label></label>
+          </p></td>
+        <td width="617" height="618" valign="top" bgcolor="#FFFFFF">
+          <table width="100%" border="0">
+            <tr>
+              <td width="2%">&nbsp;</td>
+              <td width="97%" bgcolor="#FFFFFF"><!-- InstanceBeginEditable name="content" -->
+          <p class="style5"><strong>Chitrakavya</strong></p>
+          <p class="style7">Padukaa  Sahasra, a classical&nbsp; piece with 1008  verses devoted to Lord SitaRama's sandals (worshipped by Bharata during Lord  SitaRama's stay away from Ayodhya),was written by Sri Vedanta Desikar around  1300 AD. The Knight&nbsp; tours of the shlokas  are presented in Chitra-Kavya form (picture-poem in Sanskrit). This poetic form  begins with one verse, and derives another meaningful one, by systematic  permutations (e.g. according to a Knight's tour of a board) of the same - an  amazing feat! </p>
+          <p class="style5"><strong>Our Project </strong></p>
+          <p class="style7">The aim  of our project is to build a full fledged dictionary which would store complete  information required to understand the meaning of sanskrit shabdas in the  context of sentences. It would be of great help to those who are not familiar  with Sanskrit language yet appreciate the beauty of Sanskrit shlokas. Though  many Sanskrit documents are available in the web today in e-text format, yet  there is a dire need to develop software to specify clearly the meaning and syntactic  structure of Sanskrit language constructs. We aim, initially to carry out parsing,  i.e. semantic and syntactic analysis of noun phrases in a Sanskrit sentence.  Further work, i.e. an honest attempt on verbal analysis, which at present is a  very difficult task due to complexities involved, can be carried out. We will build  a parser which would aid the users to understand the meaning of Padukaa Sahasra  shlokas put up in our website. The software application would be a general  utility which could be used for other Sanskrit documents too.</p>
+          <p>&nbsp;</p>
+          <!-- InstanceEndEditable --></td>
+              <td width="1%">&nbsp;</td>
+            </tr>
+          </table></td>
+        </tr>
+      
+    </table></td>
+  </tr>
+  <tr>
+    <td bgcolor="#FFFFFF"><div align="center" class="style6">Copyright &copy; 2008 IIITB </div></td>
+  </tr>
+</table></td>
+    <td width="15%">&nbsp;</td>
+  </tr>
+</table>
+
+</body>
+<!-- InstanceEnd --></html>

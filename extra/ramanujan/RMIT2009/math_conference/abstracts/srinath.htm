@@ -1,0 +1,60 @@
+<html>
+
+<head>
+<meta name="GENERATOR" content="Microsoft FrontPage 5.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Prof. Srinath</title>
+</head>
+
+<body>
+
+<p align="justify"><b><font color="#FF6600">
+<span style="font-size: 12.0pt; font-family: Times New Roman">The Open Problem 
+of Open-world Computing</span></font></b></p>
+<p align="justify"><font color="#245481">
+<span style="font-size: 12.0pt; font-family: Times New Roman">In the first half 
+of the 20th century, rapid advances in several related fields like set theory, 
+axiomatic systems and number theory paved the way for sound mathematical models 
+for effective computation or what we now call algorithms. The Turing Machine 
+that was proposed in 1932 is seen as the mathematical model of what can be 
+effectively computed. </span></font></p>
+<p align="justify"><font color="#245481">
+<span style="font-size: 12.0pt; font-family: Times New Roman">However, these 
+mathematical models make a simplifying assumption that limits their 
+applicability towards understanding most practical problems involving 
+computation. This is the closed-world assumption or CWA for short.<br>
+<br>
+The CWA assumes the following for effective computation:<br>
+<br>
+1. All required data for the computation is available before the start of the 
+computation, and<br>
+<br>
+2. The problem statement does not change once the computation has begun, i.e. 
+effective computation is one atomic transition between problem and solution.<br>
+<br>
+Most practical problems involving computation do not guarantee either of the 
+above. In a large-scale application process like a workflow for example, not 
+only are all pertinent data unavailable at the beginning, but also intermediate 
+results from the workflow are likely to cause changes in the overall objective.<br>
+<br>
+If we relax the CWA, several results from the conventional theory of computation 
+cease to hold any longer. For instance, atomic transitions between problem and 
+solution states makes concurrent computation no different from a set of n 
+independent computations. (A multi-tape Turing Machine is no more expressive 
+than a single tape Turing Machine). However, concurrent, non-atomic transitions 
+between problem and solution states can pose inter-dependencies between 
+interaction channels making it impossible to reduce the computation to a set of 
+n independent interactions.<br>
+<br>
+Most practical problems are open-world in nature. The inadequacy of the CWA 
+makes it a challenge to mathematically analyze and provide guarantees for 
+large-scale software applications.<br>
+<br>
+In this talk we will take a philosophical look at the nature of open-world 
+computation and address meta-modeling questions like whether a mathematical 
+model of open-world computing is possible at all.</span></font></p>
+
+</body>
+
+</html>

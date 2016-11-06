@@ -1,0 +1,43 @@
+\documentclass{article}
+\usepackage{fullpage}
+\usepackage{lmodern, hyperref,graphicx}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern,graphicx,amsmath}
+\usepackage[noadjust]{cite}
+
+\hypersetup{colorlinks=true}
+
+\newcommand{\bdesc}{\begin{description}}
+\newcommand{\edesc}{\end{description}}
+\newcommand{\beqna}{\begin{eqnarray}}
+\newcommand{\eeqna}{\end{eqnarray}}
+\newcommand{\benum}{\begin{enumerate}}
+\newcommand{\eenum}{\end{enumerate}}
+\newcommand{\bitem}{\begin{itemize}}
+\newcommand{\eitem}{\end{itemize}}
+\newcommand{\commenttxt}[1]{}
+\newcommand{\subheading}[1]{\vspace{1cm}\noindent{\bf #1}}
+
+\title{Three-dimensional Visualization of LiDAR Point Cloud Data Using
+  Structural Feature Extraction}
+\author{Graphics-Visualization-Computing Lab \\
+International Institute of Information Technology, Bangalore}
+\date{September 2013}
+\begin{document}
+\maketitle
+The LiDAR (Light Detection and Ranging) technology is used
+heavily for exploration of topographic data, which is procured through high
+speed airborne altimetry. Our motivation is to extract features of interest
+from processed LiDAR data given in .las files and use these features to
+reduce the point cloud. Our reduction is based on structural and geometric
+information which has been extracted using topological information of the
+data. Our work closely follows the work done by Keller et al.[1].
+
+\section*{References}
+[1] P. Keller, O. Kreylos, M. Vanco, M. Hering-Bertram, E. S.
+Cowgill, L. H. Kellogg, B. Hamann, and H. Hagen, ``Extracting
+and Visualizing Structural Features in Environmental Point
+Cloud LiDaR Data Sets.'' Heidelberg, Germany: Springer-
+Verlag, 2010, pp. 179--193.
+
+\end{document}

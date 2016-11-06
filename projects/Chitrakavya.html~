@@ -1,0 +1,273 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0045)http://www.iiitb.ac.in/Chitrakavya/index.html -->
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/template.dwt" codeOutsideHTMLIsLocked="false" --><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>Chitrakavya</title>
+<!-- InstanceEndEditable -->
+<!-- InstanceBeginEditable name="head" -->
+<style type="text/css">
+<!--
+.style10 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+}
+-->
+</style>
+<style type="text/css">
+<!--
+.style12 {
+	font-size: 16px;
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	font-weight: bold;
+}
+-->
+</style>
+<style type="text/css">
+<!--
+.style13 {font-size: 14px}
+-->
+</style>
+<!-- InstanceEndEditable -->
+<style type="text/css">
+<!--
+.style5 {color: #AE2201; font-family: Verdana, Arial, Helvetica, sans-serif; font-weight: bold; }
+.style6 {	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+a:link {
+	color: #AE2201;
+}
+a:visited {
+	color: #AE2201;
+}
+body {
+	background-image: url(../mainbg.jpg);
+	background-repeat: repeat;
+	background-color: #A91700;
+}
+.style8 {font-size: medium}
+.style9 {color: #FFFFFF}
+-->
+</style>
+<script type="text/javascript">
+function clear1(){
+var e=document.getElementById("email");
+e.value="";
+//alert("sds");
+
+}
+
+var  email;
+
+var xmlHttp;// global instance of XMLHttpRequest
+function createXmlHttpRequest()
+{
+       if(window.ActiveXObject)
+       {
+        xmlHttp=new ActiveXObject("Microsoft.XMLHTTP");
+      }
+
+    else if(window.XMLHttpRequest)
+    {
+        xmlHttp=new XMLHttpRequest();
+     }
+
+}
+
+
+
+function startRequest()
+{
+
+  createXmlHttpRequest();
+var emailId=document.getElementById("email");
+var url="http://localhost:8080/chitrakavya/newsletter.s?email="+emailId.value;
+email=emailId.value;
+  xmlHttp.open("GET", url,true);
+
+  xmlHttp.onreadystatechange=handleStateChange;
+
+  xmlHttp.send(null);
+message1();
+}
+
+
+
+function handleStateChange()
+{			 
+    if(xmlHttp.readyState==4)
+    {
+        if(xmlHttp.status==200)
+            {
+			var i = document.getElementById("subsText");
+i.innerHTML=email+" Subscribed, Thank You.";
+
+		  			
+				
+            }
+        else
+        {
+           alert("Error loading pagen"+ xmlHttp.status +
+":"+xmlHttp.statusText);
+        }
+    }
+}
+
+
+
+
+function test(){
+}
+</script>
+<link href="../projects/Chitrakavya_files/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<table width="100%" border="0">
+  <tbody><tr>
+    <td width="18%">&nbsp;</td>
+    <td width="67%"><table width="89%" border="0" bgcolor="#000000">
+  <tbody><tr>
+    <td width="65%"><img src="../projects/Chitrakavya_files/header.jpg" width="800" height="208"></td>
+  </tr>
+  <tr>
+    <td bgcolor="#9999FF" class="style5"><div align="center" class="style9">Welcome</div></td>
+  </tr>
+  <tr>
+    <td><table width="100%" border="0" bgcolor="#FFFFFF">
+      <tbody><tr>
+        <td width="173" valign="top" bgcolor="#CCCCFF"><table width="100%" border="0">
+          <tbody><tr>
+            <td bgcolor="#D6D6D6" class="style6"><span class="style5"><a href="../projects/Chitrakavya.html">The Project </a></span></td>
+          </tr>
+          <tr>
+            <td bgcolor="#EBEBEB" class="style6"><a href="http://www.iiitb.ac.in/Chitrakavya/visuals.html">Chitrakavya Animations</a></td>
+          </tr>
+          <tr>
+            <td bgcolor="#D6D6D6" class="style6"><a href="http://www.iiitb.ac.in/Chitrakavya/learnsanskrit.html">Learn Sanskrit </a></td>
+          </tr>
+          <tr>
+            <td bgcolor="#EBEBEB" class="style6"><a href="http://www.iiitb.ac.in/Chitrakavya/download.html">Research Papers</a><a href="http://www.iiitb.ac.in/Chitrakavya/Forum.html"></a></td>
+          </tr>
+          <tr>
+            <td bgcolor="#D6D6D6" class="style6"><a href="http://www.iiitb.ac.in/Chitrakavya/Sanskrit%20Tools.html">Tools </a></td>
+          </tr>
+          <tr>
+            <td bgcolor="#EBEBEB" class="style6"><span class="style5"><a href="http://www.iiitb.ac.in/Chitrakavya/resources.html">Resources</a><a href="http://www.iiitb.ac.in/Chitrakavya/Ekam.html"></a></span></td>
+          </tr>
+          <tr>
+            <td bgcolor="#D6D6D6" class="style6"><span class="style5"><a href="../mailto:chitrakavya@googlegroups.com">Contact Us</a></span></td>
+          </tr>
+        </tbody></table>
+          
+          <table width="100%" border="0" bgcolor="#FE9353">
+            <tbody><tr>
+              <td width="158"><div align="center" class="style6">Subscribe to Newsletter </div></td>
+            </tr>
+            <tr>
+              <td bgcolor="#C0DCC0" id="subsText"><label>
+                <div align="center">
+                  <input name="emailText" type="text" id="email" value="Email Id" onclick="clear1();">
+                  </div>
+                <div align="center">
+                  <input name="Submit" type="submit" class="style6" onclick="startRequest();" value="Subscribe">
+                  </div>
+              </label></td>
+            </tr>
+          </tbody></table>
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+          <p align="center">
+            <label></label>
+          </p></td>
+        <td width="617" height="618" valign="top" bgcolor="#FFFFFF">
+          <table width="100%" border="0">
+            <tbody><tr>
+              <td width="2%">&nbsp;</td>
+              <td width="97%" bgcolor="#FFFFFF"><!-- InstanceBeginEditable name="content" -->
+               
+                <table width="100%" height="100" border="0">
+                  <tbody><tr>
+                    <td bgcolor="#FFFFFF"><p align="center" class="style12">This project is undertaken to enrich the Computing resource pool for Sanskrit computing.</p>
+                      <p align="justify" class="style10"> <strong class="style5 style13">Purpose: </strong><span class="style6">To provide set of software/hardware solutions which</span> <span class="style6"> simplifies the use of Sanskrit on Computer and let the user appreciate the flexiblitity and richness <strong>Sanskrit</strong> provides. </span><br>
+                        <br>
+                          <span class="style6">These solutions, will contribute to the productivity of user who is willing to use Sanskrit language on computers.</span></p>
+                      <ul>
+                        <li> <strong>Set of tools which will speed up the process of  Sanskrit data entry</strong><br>
+                          <br>
+                          <ul>
+                            <li>Devanagri Keyboard<br>
+                              <br>
+                            </li>
+                            <li>The spell checker facility for Sanskrit<br>  
+                              <br>
+                            </li>
+                            <li> Word suggest tool to speed up the data <br>
+                                <br>
+                            </li>
+                            <li>Dictionary Services <br>
+                              <br>
+                            </li>
+                            <li>Encoding Conversion (ISCII, UNICODE) tool <br>
+                              <br>  
+                              <br>
+                            </li>
+                          </ul>
+                        </li>
+                        <li><strong>Computational Linguistics</strong><br>
+                          <br>
+                          <ul>
+                            <li>Sandhi Analysis/Synthesis Tool<br>
+                              <br> 
+                               </li>
+                            <li>Sanskrit Noun Parser <br>
+                              <br>                         
+                            </li>
+                            <li>Sanskrit Verb Parser<br>  
+                              <br>
+                            </li>
+                            <li>Sanskrit Sentence Parser<br>
+                              <br>
+                            </li>
+                            <li>Machine Translation from Sanskrit to English/Hindi <br>  
+                              <br>
+                            </li>
+                            <li> Text To Speech<br>
+                              <br>
+                            </li>
+                            <li>Speech Dictation <br>
+                              <br>
+                            </li>
+                            <li>                              Speech Recognition </li>
+                          </ul>
+                        </li>
+                        </ul>
+                      <p>&nbsp;</p>
+                      <p align="center"><span class="style5">The Inspiration for this project came from <strong>"<a href="http://www.iiitb.ac.in/paduka1.htm">Chitrakavya</a>"</strong></span></p>
+                      <p class="style6">Chitrakavya
+                        
+                        Padukaa Sahasra, a classical  piece with 1008 verses devoted to Lord SitaRama's sandals (worshipped by Bharata during Lord SitaRama's stay away from Ayodhya),was written by Sri Vedanta Desikar around 1300 AD. The Knight  tours of the shlokas are presented in Chitra-Kavya form (picture-poem in Sanskrit). This poetic form begins with one verse, and derives another meaningful one, by systematic permutations (e.g. according to a Knight's tour of a board) of the same - an amazing feat!</p>
+                      <p class="style6"><a href="paduka/paduka.html">Read More</a> </p>
+                      <p>&nbsp;</p></td>
+                  </tr>
+                </tbody></table>
+              <!-- InstanceEndEditable --></td>
+              <td width="1%">&nbsp;</td>
+            </tr>
+          </tbody></table></td>
+        </tr>
+      
+    </tbody></table></td>
+  </tr>
+  <tr>
+    <td bgcolor="#FFFFFF"><div align="center" class="style6">Copyright © 2008 IIITB </div></td>
+  </tr>
+</tbody></table></td>
+    <td width="15%">&nbsp;</td>
+  </tr>
+</tbody></table>
+
+
+<!-- InstanceEnd -->
+</body></html>

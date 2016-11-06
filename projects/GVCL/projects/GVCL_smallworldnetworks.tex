@@ -1,0 +1,53 @@
+\documentclass{article}
+\usepackage{fullpage}
+\usepackage{lmodern, hyperref,graphicx}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern,graphicx,amsmath}
+\usepackage[noadjust]{cite}
+
+\hypersetup{colorlinks=true}
+
+\newcommand{\bdesc}{\begin{description}}
+\newcommand{\edesc}{\end{description}}
+\newcommand{\beqna}{\begin{eqnarray}}
+\newcommand{\eeqna}{\end{eqnarray}}
+\newcommand{\benum}{\begin{enumerate}}
+\newcommand{\eenum}{\end{enumerate}}
+\newcommand{\bitem}{\begin{itemize}}
+\newcommand{\eitem}{\end{itemize}}
+\newcommand{\commenttxt}[1]{}
+\newcommand{\subheading}[1]{\vspace{1cm}\noindent{\bf #1}}
+
+\title{Visualization of Small World Networks Using Similarity Matrices}
+\author{Graphics-Visualization-Computing Lab \\
+International Institute of Information Technology, Bangalore}
+\date{July 2013}
+\begin{document}
+\maketitle
+
+Visualization of small world networks is challenging owing
+to the large size of the data and its property of being ``locally dense but
+globally sparse.'' Generally networks are represented using graph layouts
+and images of adjacency matrices, which have shortcomings of occlusion
+and spatial complexity in its direct form. These shortcomings are usually
+alleviated using pixel displays, hierarchical representations in the graph
+layout, and sampling and aggregation in the matrix representation. We
+propose techniques to enable effective and efficient visualization of small
+world networks in the similarity space, as opposed to attribute space, us-
+ing similarity matrix representation. Using the VAT (Visual Assessment
+of cluster Tendency) algorithm as a seriation algorithm is pivotal to our
+techniques. We propose the following novel ideas to enable efficient hier-
+archical graphical representation of large networks: (a) parallelizing VAT
+on the GPUs, (b) performing multilevel clustering on the matrix form,
+and (c) visualizing a series of similarity matrices, from the same data set,
+using parallel sets-like representation. We have shown the effectiveness
+of proposed techniques using performance measurements of parallel im-
+plementation of VAT, results of multilevel clustering, and analyses made
+in case studies.
+
+Our work has been published at BDA 2013 [1].
+
+\section*{References}
+[1] S. Parveen, and J. Sreevalsan-Nair, ``Visualization of Small World Networks Using Similarity Matrices,'' (to appear) in Proceedings of the second International Conference on Big Data Analytics (BDA 2013), Mysore, India.
+
+\end{document}

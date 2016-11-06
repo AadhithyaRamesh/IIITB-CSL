@@ -1,0 +1,244 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/template.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>Research Papers</title>
+<!-- InstanceEndEditable -->
+<!-- InstanceBeginEditable name="head" --><!-- InstanceEndEditable -->
+<style type="text/css">
+<!--
+.style5 {color: #AE2201; font-family: Verdana, Arial, Helvetica, sans-serif; font-weight: bold; }
+.style6 {	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+a:link {
+	color: #AE2201;
+}
+a:visited {
+	color: #AE2201;
+}
+body {
+	background-image: url(mainbg.jpg);
+	background-repeat: repeat;
+	background-color: #A91700;
+}
+.style8 {font-size: medium}
+.style9 {color: #FFFFFF}
+-->
+</style>
+<script type="text/javascript">
+function clear1(){
+var e=document.getElementById("email");
+e.value="";
+//alert("sds");
+
+}
+
+var  email;
+
+var xmlHttp;// global instance of XMLHttpRequest
+function createXmlHttpRequest()
+{
+       if(window.ActiveXObject)
+       {
+        xmlHttp=new ActiveXObject("Microsoft.XMLHTTP");
+      }
+
+    else if(window.XMLHttpRequest)
+    {
+        xmlHttp=new XMLHttpRequest();
+     }
+
+}
+
+
+
+function startRequest()
+{
+
+  createXmlHttpRequest();
+var emailId=document.getElementById("email");
+var url="http://localhost:8080/chitrakavya/newsletter.s?email="+emailId.value;
+email=emailId.value;
+  xmlHttp.open("GET", url,true);
+
+  xmlHttp.onreadystatechange=handleStateChange;
+
+  xmlHttp.send(null);
+message1();
+}
+
+
+
+function handleStateChange()
+{			 
+    if(xmlHttp.readyState==4)
+    {
+        if(xmlHttp.status==200)
+            {
+			var i = document.getElementById("subsText");
+i.innerHTML=email+" Subscribed, Thank You.";
+
+		  			
+				
+            }
+        else
+        {
+           alert("Error loading pagen"+ xmlHttp.status +
+":"+xmlHttp.statusText);
+        }
+    }
+}
+
+
+
+
+function test(){
+}
+</script>
+<link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<table width="100%" border="0">
+  <tr>
+    <td width="18%">&nbsp;</td>
+    <td width="67%"><table width="89%" border="0" bgcolor="#000000">
+  <tr>
+    <td width="65%"><img src="../Chitrakavya_files/header.jpg" width="800" height="208" /></td>
+  </tr>
+  <tr>
+    <td bgcolor="#9999FF" class="style5"><div align="center" class="style9">Welcome</div></td>
+  </tr>
+  <tr>
+    <td><table width="100%" border="0" bgcolor="#FFFFFF">
+      <tr>
+        <td width="173" valign="top" bgcolor="#CCCCFF"><table width="100%" border="0">
+          <tr>
+            <td bgcolor="#D6D6D6" class="style6"><span class="style5"><a href="index.html">The Project </a></span></td>
+          </tr>
+          <tr>
+            <td bgcolor="#EBEBEB" class="style6"><a href="visuals.html">Chitrakavya Animations</a></td>
+          </tr>
+          <tr>
+            <td bgcolor="#D6D6D6" class="style6"><a href="learnsanskrit.html">Learn Sanskrit </a></td>
+          </tr>
+          <tr>
+            <td bgcolor="#EBEBEB" class="style6"><a href="download.html">Research Papers</a><a href="Forum.html"></a></td>
+          </tr>
+          <tr>
+            <td bgcolor="#D6D6D6" class="style6"><a href="Sanskrit%20Tools.html">Tools </a></td>
+          </tr>
+          <tr>
+            <td bgcolor="#EBEBEB" class="style6"><span class="style5"><a href="resources.html">Resources</a><a href="Ekam.html"></a></span></td>
+          </tr>
+          <tr>
+            <td bgcolor="#D6D6D6" class="style6"><span class="style5"><a href="mailto:chitrakavya@googlegroups.com">Contact Us</a></span></td>
+          </tr>
+        </table>
+          
+          <table width="100%" border="0" bgcolor="#FE9353">
+            <tr>
+              <td width="158"><div align="center" class="style6">Subscribe to Newsletter </div></td>
+            </tr>
+            <tr>
+              <td bgcolor="#C0DCC0" id="subsText"><label>
+                <div align="center">
+                  <input name="emailText" type="text" id="email" value="Email Id" onclick="clear1();"/>
+                  </div>
+                <div align="center">
+                  <input name="Submit" type="submit" class="style6" onclick="startRequest();" value="Subscribe" />
+                  </div>
+              </label></td>
+            </tr>
+          </table>
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+          <p align="center">
+            <label></label>
+          </p></td>
+        <td width="617" height="618" valign="top" bgcolor="#FFFFFF">
+          <table width="100%" border="0">
+            <tr>
+              <td width="2%">&nbsp;</td>
+              <td width="97%" bgcolor="#FFFFFF"><!-- InstanceBeginEditable name="content" -->
+          <table width="100%" border="0">
+            <tr>
+              <td bgcolor="#D6D6D6"><div align="center"><strong>Given here are some Research Papers for download , on the work related to <span class="style5">&quot;Chitrakavya&quot;</span></strong></div></td>
+            </tr>
+            <tr>
+              <td bgcolor="#D6D6D6"><p align="left" class="style5"><a href="downloads/bc.pdf">A Boolean Chitrakavya </a></p>
+                <p align="left"><em>Abstract&mdash; </em>The research work presents the  transformation of an integer represented in the binary field of ones and zeros  to an other integer by arranging the bits of the number on a m x n matrix and  performing a knight&rsquo;s tour on it and finding the numbers which when transformed  produce the same number, i.e., itself. The scheme has been generalized for an  integer of m x n bits arranged on a m x n matrix and performing all the  possible solution for knight&rsquo;s tour for a m x n matrix.</p>
+                <a href="downloads/00281427.pdf"></a></td>
+            </tr>
+            <tr>
+              <td bgcolor="#EBEBEB"><p align="left" class="style5"><strong><a href="downloads/00281427.pdf">Finding Knight&rsquo;s Tours on an M x N Chessboard With</a></strong> <a href="downloads/00281427.pdf"><strong>&nbsp;0 (MN) Hysteresis </strong></a><strong></strong></p>
+                <p><em>Abstract-</em> How can a knight he moved on  a chessboard so that the<br />
+                Knight visits  each square once and only once and goes hack to the starting square? The  earliest serious attempt to find a knight&rsquo;s tour on the chessboard was made by  L. Euler in 1759. In this correspondence, a parallel algorithm based on the  hysteresis McCulloch-Pith neurons is proposed to solve the knight&rsquo;s tour  problem. The relation between the travelling salesman problem and the knight&rsquo;s  tour problem is also discussed. A large number of simulation runs were performed to investigate the behaviour of the hysteresis  McCulloch-Pitts neural model. The purpose of this correspondence is to present  a case study-how to successfully represent the combinatorial optimization  problems by means of neural network.</p>                
+                <a href="downloads/01331065.pdf"></a></td>
+            </tr>
+            <tr>
+              <td bgcolor="#D6D6D6"><p class="style5"><strong><a href="downloads/01331065.pdf">The  Knight's Tour -</a></strong><a href="downloads/01331065.pdf"><strong>Evolutionary  vs. Depth-First Search</strong></a></p>
+                <p><em>Abstract-</em>A genetic algorithm is used  lo find solutions b the standard 8x8 knight's tour problem, and its performance is compared  against standard depth-first search with backtracking. The binary encoding is described, along  with a simple repair  technique which can be used to extend burs that have reached  impasse. The repair method is powerful enough on  its own to find complete tours, given randomly generated  bit strings. But when used in conjunction with a genetic algorithm ,  considerably more solutions are found. Depth-first search is shown to find more solutions  under certain&nbsp; conditions , but the  genetic algorithm finds solutions more  consistently for arbitrary initial conditions.</p>                
+                <a href="downloads/gomes98boosting.pdf"></a></td>
+            </tr>
+            <tr>
+              <td bgcolor="#EBEBEB"><p><a href="downloads/nlg.pdf" class="style5"><strong>Context-Free Representational Under specification For NLG</strong></a></p>
+                <p>                  The purpose of the COGENT Project1 is to look at issues in generic (wide-coverage and reusable) surface  generation.
+                  Central to generic generation is the issue  of nondeterminism, i.e. multiple outputs for the same input, and how to control
+                  it. Nondeterminism arises from three main  sources in natural language generation2: </p>
+                <p>(i) <em>wide  syntactic and lexical</em> <em>coverage</em>: the wider the coverage of grammar and lexicon, the  more word strings can be generated from the same 
+                  semantic representation; </p>
+                <p>(ii) <em>underdetermined  inputs</em>: the less specific the semantic or conceptual representation, the<br />
+                  more word strings correspond to it; and  </p>
+                <p>(iii) <em>unconstrained mapping from inputs to realisations</em>: the fewer  constraints<br />
+                  (e.g. rule application conditions,  intermediate selection processes, probabilities) there are, the more realisations  can
+                  be generated from an input. Wide coverage  and (even extensively) underdetermined semantics can both make an NLG
+                  system more generic, because they help make  a system more portable and reusable. However, at present no comprehensive
+                  methodology for <em>controlling the  nondeterminism</em>, for deciding between alternatives, exists. It is one of the
+                  core aims of  COGENT to develop such a methodology.<strong> </strong></p>
+                <a href="downloads/Microsoft Word - BOOLEAN CHITRAKAVYA.pdf"></a></td>
+            </tr>
+            <tr>
+              <td bgcolor="#D6D6D6"><p><strong class="style5"><a href="downloads/p39-wildenberg.pdf">Heurististics as an Aid To Back Tracking, a Classroom Project</a></strong><br />
+                    <strong><br />
+                    </strong><em>Abstract-</em> The knight's tour problem is discussed as a  classroom example of a backtracking problem which requires heuristics to be  effective.<br />
+                    <a href="downloads/nlg.pdf"></a></p>                </td>
+            </tr>
+            <tr>
+              <td bgcolor="#EBEBEB"><p class="style5"><a href="downloads/gomes98boosting.pdf"><strong>Boosting Combinatorial Search Through  Randomization (gomes)</strong></a></p>
+                <p><em>Abstract</em>                  :Unpredictability in the running time of  complete search
+                  procedures can often be explained by the  phenomenon of &ldquo;heavy-tailed cost distributions&rdquo;, meaning  that at any time<br />
+                  during the experiment there is a  non-negligible probability 
+                  of hitting a problem that requires  exponentially more time to
+                  solve than any that has been encountered  before (Gomes <em>et</em><br />
+                    <em>al. </em>1998a). We present a general method for introducing  controlled 
+                  randomization into complete search  algorithms. The &ldquo;boosted&rdquo; search methods provably eliminate  heavy-tails to<br />
+                  the right of the median. Furthermore, they  can take advantage
+                  of heavy-tails to the left of the median  (that is, a nonnegligible
+                  chance of very short runs) to dramatically  shorten
+                  the solution time. We demonstrate speedups  of several orders
+                  of magnitude for state-of-the-art complete  search procedures
+                  running on hard, real-world problems.<strong> </strong></p>
+                <a href="downloads/p39-wildenberg.pdf"></a></td>
+            </tr>
+          </table>
+        <!-- InstanceEndEditable --></td>
+              <td width="1%">&nbsp;</td>
+            </tr>
+          </table></td>
+        </tr>
+      
+    </table></td>
+  </tr>
+  <tr>
+    <td bgcolor="#FFFFFF"><div align="center" class="style6">Copyright &copy; 2008 IIITB </div></td>
+  </tr>
+</table></td>
+    <td width="15%">&nbsp;</td>
+  </tr>
+</table>
+
+</body>
+<!-- InstanceEnd --></html>

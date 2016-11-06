@@ -1,0 +1,218 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+<!-- saved from url=(0052)http://www.iiitb.ac.in/IndexPageMaterial/paduka1.htm -->
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><title>Indian Institute of Information Technology, Bangalore</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252"><link href="Indian%20Institute%20of%20Information%20Technology,%20Bangalore_files/iiitb.css" type="text/css" rel="stylesheet">
+<meta content="MSHTML 6.00.2900.2523" name="GENERATOR"></head>
+<body>
+<table id="body" cellspacing="0">
+  <tbody>
+  <tr>
+    <td align="center">
+      <table id="content" style="WIDTH: 750px; HEIGHT: 560px" border="0" cellspacing="0">
+        <tbody>
+        <tr class="height">
+          <td colspan="3" align="right" height="16" valign="bottom">&nbsp;</td>
+          <td width="2"><br></td></tr>
+        <tr>
+          <td colspan="2" align="right" bgcolor="#ffffff" height="70" valign="top">
+            <div id="header">
+            <div class="style1" id="innerNavBar">            </div>
+            <div id="innerHeading"><span class="innerHeading">Knight's tour in the Padukaa 
+            Sahasra, Haravijaya, and other Sanskrit Literature<br></span></div></div></td>
+          <td class="border" rowspan="4" valign="top" width="10"><!--DWLayoutEmptyCell-->&nbsp;</td>
+          <td><br></td></tr>
+        <tr> 
+          <td class="contentPane" colspan="2" bgcolor="#ffffff" valign="top">
+            <p>This page is devoted to many contributions to 
+Combinatorics from Indian Classics (currently containing classics in 
+Sanskrit). It shows various solutions to the Knights tour problem - that
+ of making a Chess Knight visit all squares of an chessboard exactly 
+once. This problem has fascinated many for centuries, including the 
+great mathematican Euler. The solutions on this page are for a 4x8 
+board, but can be seamlessly repeated to get a complete solution for the
+ whole board. They include both a prayer form in the "Padukaa Sahasra" 
+about 1300 A.D., as well as the earlier forms in the HaraVijaya of 
+Ratnakara (about 800 A.D.), and the Kavyalankaraa by Rudrata (about 900 
+A.D.). The links on the page are to various Sanskrit classics, which 
+have information regarding both Knight's tours, as well as other amazing
+ combinatorial jugglery with Sanskrit poems.
+
+</p><p> The pictures below show the Knights tour in the Padukaa Sahasra, a piece 
+            with 1008 verses devoted to Lord SitaRama's sandals (worshipped by 
+            Bharata during Lord SitaRama's stay away from Ayodhya), written by 
+            Sri Vedanta Desikar around 1300 AD. These tours 
+            are presented in Chitra-Kavya form (picture-poem in Sanskrit). This 
+            poetic form begins with one verse, and derives another meaningful one, by systematic 
+            permutations (e.g. according to a Knight's tour of a board) of the 
+            same - an amazing feat! Several more Chitra-Kavya's are 
+            shown in the same Padukaa Sahasra page - e.g. "LokaTaraaKamaChara 
+            ...", is written half on a chessboard, reflected through the center, 
+            and the result can be read sequentially either horizontally or 
+            vertically in a meaningful sense on the board.
+<br><br>(a)The JPEG file "board.jpg" <img style="WIDTH: 173px; HEIGHT: 128px" src="Indian%20Institute%20of%20Information%20Technology,%20Bangalore_files/board.jpg" border="0"> shows the Knight's tour in the top left corner. The first 
+            sloka is written sequentially, and the second one is read off it, 
+            following the tour - which is also marked in Devanagari 
+            numerals.<br><br>(b) The JPEG file "slokas.jpg" <img style="WIDTH: 172px; HEIGHT: 128px" src="Indian%20Institute%20of%20Information%20Technology,%20Bangalore_files/slokas.jpg" border="0"> shows the two slokas - the first on the top left of the 
+            left page, and the second following it<br><br>(c) The JPEG file "previous_sloka.jpg" <img style="WIDTH: 187px; HEIGHT: 137px" src="Indian%20Institute%20of%20Information%20Technology,%20Bangalore_files/previous_sloka.jpg" border="0"> lists the preceding Sanskrit material for reference 
+            only.<br><br>(d) The JPEG file "cover.jpg" <img style="WIDTH: 183px; HEIGHT: 139px" src="Indian%20Institute%20of%20Information%20Technology,%20Bangalore_files/cover.jpg" border="0"> is the cover page of the 1911 book from which we have 
+            taken this material. The translation of these slokas (following the commentator Sriniwasa) is given below:
+</p><p align="center">
+Chess knight circuit (G. S. S. Murthy's Translation)
+</p><p>
+Sthiraagasaam sadaaraadhyaa vihataakatataamataa| 
+Satpaaduke saraasaa maa rangaraajapadam naya||
+</p><p>
+Sthitaa samayaraajatpaagataraa modake gavi| 
+Duramhasaam sannataadaa saadhyaataapakaraasaraa||
+</p><p> 
+
+The author beseeches the sandals of God to help him reach the abode or 
+the feet of God. The two slokas together form one sentence.
+</p><p>
+Sat+paaduke = O Sandals of Brahma,
+</p><p>
+Sthira+aagasaam, Sadaa+aaraadhyaa = (you are )always revered by the worldly who are confirmed sinners,
+</p><p>
+Vihata+aka+tata+amataa = (you are) the destroyer of unhappiness and instruments of unhappiness,
+</p><p>
+Saraasaa = (you are) always accompanied by (the jingling) sound (of trinket bells attached to the sandals?)
+</p><p>
+Maa, naya = take me,
+</p><p>
+Rangaraaja +padam = to the feet or abode of God.
+</p><p>
+Samaya+ raajat+paa = (you  are ) the protector of those shining through their good conduct,
+</p><p>
+Aagata+raa = (you have) attained brilliance of gold,
+</p><p>
+Modake = (you) dispense joy,
+</p><p>
+Gavi, sthitaa = (you) are at the center of sun,
+</p><p>
+Durahmasaam, sannataa+daa = (you are) destroyer of the despondency of the wicked,
+</p><p>
+Saadhya+ataapa+karaa = rays (of your gems) have the power of removing the heat (of the devotee),
+</p><p>
+Aasaraa = (you) move all around,
+
+
+<br><br>English 
+            <a href="../chitrakavya.html">"Chitra-Kavya's"</a> from Knuth (Jan 2005) for these two tours are also 
+            listed there. 
+
+</p><p>
+ One knight jumps like three rook-wise steps.
+ </p><p>Past sore too mean; so just for free,
+ </p><p>Hopes here, turns there, flies each goose now.
+ </p><p>Can't place last word? Won't find the sea
+</p><p>
+ </p><p>One, two, three, four! See each word here:
+ </p><p>Jumps so wise now find their place passed.
+ </p><p>Terns can't soar like flies the free rook;
+ </p><p>Goose steps just won't mean knight hops last.
+</p><p>
+ - D. E. Knuth, Jan 6, 2005
+
+
+
+
+<br><br>Similar Knight's tours are in the 
+            Kavyalankaraa by Rudratra (around 900 A.D.) and in the Haravijaya by 
+            Ratnakara <br>(830 A.D. according to David Smith of Oxford). The -
+            tour in the Haravijaya yield's a complete Hamilton cycle (Knuth - 
+            Jan 2005) and is probably the oldest tour known.
+</p><p> Excerpts on the various forms of Chitra-Kavya's and 
+            related poetics from Kunhan Raja's "Survey of Sanskrit Literature" 
+            Bharatiya Vidya Bhavan, 1962 are also included.
+
+<br><br>For reference 
+            we have scanned and listed the relevant pages of<br><br>
+
+
+(1) The Paduka Sahasra of Vedanta Desikar, 
+<br> &nbsp; &nbsp; Slokas
+<a href="http://www.iiitb.ac.in/csl/paduka/padukaaslokas/1.jpg"> P1-</a> 
+<a href="http://www.iiitb.ac.in/csl/paduka/padukaaslokas/2.jpg"> P2- </a> 
+<a href="http://www.iiitb.ac.in/csl/paduka/padukaaslokas/3.jpg"> P3- </a> 
+<a href="http://www.iiitb.ac.in/csl/paduka/padukaaslokas/4.jpg"> P4- </a>
+<a href="http://www.iiitb.ac.in/csl/paduka/padukaaslokas/5.jpg"> P5- </a>
+<a href="http://www.iiitb.ac.in/csl/paduka/padukaaslokas/6.jpg"> P6- </a>
+<a href="http://www.iiitb.ac.in/csl/paduka/padukaaslokas/7.jpg"> P7- </a> 
+<a href="http://www.iiitb.ac.in/csl/paduka/padukaaslokas/8.jpg"> P8- </a> 
+<a href="http://www.iiitb.ac.in/csl/paduka/padukaaslokas/9.jpg"> P9- </a>
+<a href="http://www.iiitb.ac.in/csl/paduka/padukaaslokas/10.jpg"> P10- </a>
+<a href="http://www.iiitb.ac.in/csl/paduka/padukaaslokas/11.jpg"> P11- </a>
+<a href="http://www.iiitb.ac.in/csl/paduka/padukaaslokas/12.jpg"> P12- </a> 
+<a href="http://www.iiitb.ac.in/csl/paduka/padukaaslokas/13.jpg"> P13- </a> 
+<a href="http://www.iiitb.ac.in/csl/paduka/padukaaslokas/14.jpg"> P14 </a>
+<br>  &nbsp; &nbsp; Pictures
+<a href="http://www.iiitb.ac.in/csl/paduka/padukapictures/p1.jpg"> P1- </a>
+<a href="http://www.iiitb.ac.in/csl/paduka/padukapictures/p2.jpg"> P2- </a> 
+<a href="http://www.iiitb.ac.in/csl/paduka/padukapictures/p3.jpg"> P3- </a> 
+<a href="http://www.iiitb.ac.in/csl/paduka/padukapictures/p4.jpg"> P4- </a> 
+<a href="http://www.iiitb.ac.in/csl/paduka/padukapictures/p5.jpg"> P5 </a> 
+<br>
+
+(2) The Haravijaya of Ratnakara
+<br>
+ &nbsp; &nbsp;
+<a href="http://www.iiitb.ac.in/csl/paduka/haravijaya_page1.jpg">  P1 </a> 
+<br>
+(3)The KavyaDarsha of Dandin
+<br>
+ &nbsp; &nbsp;
+<a href="http://www.iiitb.ac.in/csl/paduka/dandin/1.jpg"> P1-</a> 
+<a href="http://www.iiitb.ac.in/csl/paduka/dandin/2.jpg"> P2- </a> 
+<a href="http://www.iiitb.ac.in/csl/paduka/dandin/3.jpg"> P3- </a> 
+<a href="http://www.iiitb.ac.in/csl/paduka/dandin/4.jpg"> P4- </a>
+<a href="http://www.iiitb.ac.in/csl/paduka/dandin/5.jpg"> P5- </a>
+<a href="http://www.iiitb.ac.in/csl/paduka/dandin/6.jpg"> P6- </a>
+<a href="http://www.iiitb.ac.in/csl/paduka/dandin/7.jpg"> P7- </a> 
+<a href="http://www.iiitb.ac.in/csl/paduka/dandin/8.jpg"> P8- </a> 
+<a href="http://www.iiitb.ac.in/csl/paduka/dandin/9.jpg"> P9- </a>
+<a href="http://www.iiitb.ac.in/csl/paduka/dandin/10.jpg"> P10- </a>
+<a href="http://www.iiitb.ac.in/csl/paduka/dandin/11.jpg"> P11- </a>
+<a href="http://www.iiitb.ac.in/csl/paduka/dandin/12.jpg"> P12- </a> 
+<a href="http://www.iiitb.ac.in/csl/paduka/dandin/13.jpg"> P13- </a> 
+<a href="http://www.iiitb.ac.in/csl/paduka/dandin/14.jpg"> P14 </a>
+<br>
+
+(4) <a href="http://www.iiitb.ac.in/csl/paduka/Kavyalankara\ \(Rudrata\)/chitra\ kavyas \(picture\ poems\)"> The Kavyaalankara of Rudrata
+</a><br>
+
+<br>
+<br>
+
+They can be downloaded. The file names used are sequential with respect 
+to page number in the text, and should be self-explanatory - try them in
+ a JPEG viewer. More material will be added on a continual basis.
+
+            <br><br>We thank the publishers - <a href="http://www.parimalpublications.com/">Parimal Publications, New 
+            Delhi</a>&nbsp; and Chowkhambha Publications for permission to use 
+            this material.<br><br>More material will be added to this site on a 
+            continual basis. If any of you have information related to these 
+            topics, please drop us an email at gnsprasanna@iiitb.ac.in<br>&nbsp; 
+            <br></p>
+            <div align="center"><span style="FONT-WEIGHT: bold"></span><br><br>
+            <p></p></div></td>
+          <td><br></td></tr>
+        <tr>
+          <td colspan="2" align="center" bgcolor="#999999" height="16" valign="center"><span class="validators"><a href="http://validator.w3.org/check?uri=referer"><img style="BORDER-RIGHT: 0px solid; BORDER-TOP: 0px solid; BORDER-LEFT: 0px solid; WIDTH: 60px; BORDER-BOTTOM: 0px solid; HEIGHT: 15px" alt="valid XHTML" src="Indian%20Institute%20of%20Information%20Technology,%20Bangalore_files/XHTMLval.gif"></a> 
+            <a href="http://jigsaw.w3.org/css-validator/validator?uri=http://www.iiitb.ac.in/css/iiitb.css"><img style="BORDER-RIGHT: 0px solid; BORDER-TOP: 0px solid; BORDER-LEFT: 0px solid; WIDTH: 60px; BORDER-BOTTOM: 0px solid; HEIGHT: 15px" alt="valid CSS" src="Indian%20Institute%20of%20Information%20Technology,%20Bangalore_files/CSSval.gif"></a> 
+            </span></td>
+          <td><br></td></tr>
+        <tr>
+          <td colspan="2" bgcolor="#000000" height="33" valign="top"><span class="address"><b>Address:</b> IIIT-Bangalore, 26/c, opp Infosys 
+            (Gate 1), Electronics City, Hosur Rd, Bangalore-560 100 
+            <br><b>Tel:</b> +91 80 28527627-635 <br><span class="versionLine">version 5.0 on December 15, 2004<br>Best viewed 
+            with Internet Explorer 6 and Mozilla Firefox </span></span><!-- SiteSearch Google -->
+            <form action="http://www.google.com/search" method="get"><input value="UTF-8" name="ie" type="hidden"> <input value="UTF-8" name="oe" type="hidden"> 
+            <div class="rightAlign">
+            <table id="search">
+              <tbody>
+              <tr>
+                <td align="left" valign="center"><input maxlength="255" size="15" name="q"> <input class="searchButton" value="Search" name="btnG" type="submit"> 
+                  <input value="www.iiitb.ac.in" name="domains" type="hidden"><br><input checked="checked" value="www.iiitb.ac.in" name="sitesearch" type="radio"> iiitb.ac.in <input value="" name="sitesearch" type="radio"> www 
+            </td></tr></tbody></table></div></form><!-- SiteSearch Google --></td>
+          <td><br></td></tr></tbody></table></td></tr></tbody></table>
+</body></html>

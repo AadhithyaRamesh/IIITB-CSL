@@ -1,0 +1,21 @@
+<?php
+$con = mysql_connect("localhost","root","admin");
+if (!$con)
+  {
+  die('Could not connect: ' . mysql_error());
+  }
+
+mysql_select_db("register", $con);
+
+$sql="INSERT INTO persons (fname, lname, email, city)
+VALUES
+('$_POST[firstname]','$_POST[lastname]','$_POST[email]','$_POST[city]')";
+
+if (!mysql_query($sql,$con))
+  {
+  die('Error: ' . mysql_error());
+  }
+echo "1 record added";
+
+mysql_close($con);
+?> 
